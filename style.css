@@ -1,0 +1,100 @@
+/*****************************************************************************/
+/*This file controls the look and feel of flashcard app
+Features
+1. Maakes the card flip when clicked usieng CSS transtions
+2. Adds responsive design so it looks good on both desktop and mobile
+3. Styles from inputs and buttons to be clean and readable
+4. Provides a simplem, user-friendly interface with centered cards and smooth animations
+ I think of it as the paint and lyout
+******************************************************************************/
+
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Flashcard styles */
+.flashcard-container {
+  position: relative;
+  width: 300px;
+  height: 180px;
+  margin: 2.5rem auto;
+  perspective: 1000px; /* Enable 3D flipping */
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back when facing front */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: lightblue;
+  transition: transform 0.5s;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Flip container */
+.flashcard-container {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Buttons for navigation */
+.buttons {
+  margin: 1rem 0;
+}
+
+button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Add card form */
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  width: 80%;
+  max-width: 300px;
+}
+
+form button {
+  background-color: #2196f3;
+}
+
+form button:hover {
+  background-color: #1976d2;
+}

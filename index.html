@@ -1,0 +1,47 @@
+<!--The Structure of the App 
+// This is the main HTML file it holdds all the visible content and link to the styles and java script.
+// parts 
+// A card container that allows one flashcard at a time ( the front and back sides)
+// Aform for adding new flashcards
+// A buttons 1. Naviagte(Next, Previous) 2. add new card 3. Delete cards
+// its also includes the scripts (script.js) and the style file(style.css)
+// I personaly thing of it as the skeleton of the app
+ --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Flashcard Quiz</h1>
+
+  <!-- Flashcard container with front and back for flipping -->
+  <div class="flashcard-container" id="flashcard">
+    <div class="card-face front" id="card-front">Loading...</div>
+    <div class="card-face back" id="card-back"></div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <div class="buttons">
+    <button onclick="prevCard()">⟨ Previous</button>
+    <button onclick="nextCard()">Next ⟩</button>
+    <button onclick="deleteCard()">🗑️ Delete</button>
+  </div>
+
+  <!-- Form to add new flashcards -->
+  <form id="flashcard-form">
+    <h2>Add Flashcard</h2>
+    <input type="text" id="question" placeholder="Enter question" required />
+    <input type="text" id="answer" placeholder="Enter answer" required />
+    <button type="submit">Add Flashcard</button>
+  </form>
+
+  <!-- Link JavaScript logic -->
+  <script src="script.js"></script>
+</body>
+</html>
