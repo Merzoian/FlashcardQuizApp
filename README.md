@@ -32,10 +32,14 @@ Watch a walkthrough of the app features and code explanation here:
 ## 📁 Project Structure
 
 flashcard-app/
+
 │
 ├── index.html # Main HTML structure
+
 ├── style.css # Styles for layout and animations
+
 ├── script.js # App functionality and logic
+
 └── README.md # Project overview and instructions
 
 ---
@@ -51,14 +55,41 @@ flashcard-app/
 
 ## 💡 Stretch Features (if completed)
 
-*No stretch features implemented for this version.*
+ 
+ In this version of the Flashcard Quiz App, I focused on completing the full base functionality.
+ 
+ I did explore advanced concepts for a beginner project:
+
+I implemented card flipping animations using CSS and JavaScript, which involved working with transform and backface-visibility, simulating a 3D flip effect.
+
+I also added deletion functionality and persistent storage using localStorage, so users can manage their flashcards across browser sessions—this went beyond just displaying or adding cards.
+
+If I were to expand further, possible stretch challenges could include:
+
+Organizing flashcards into categories (like subjects or decks).
+
+Adding quiz mode (multiple choice or typed answer).
+
+Syncing flashcards with a cloud database (e.g., Firebase).
+
+
 
 ---
 
 ## ⏱ Time Spent
 
 🕒 **25 hours**  
-(Includes research, coding, debugging, documentation, and video creation)
+| Activity                          | Estimated Hours |
+| --------------------------------- | --------------- |
+| Brainstorming & Planning          | 2.5 hours       |
+| Research (storage, flip design)   | 3 hours         |
+| HTML/CSS layout                   | 3.5 hours       |
+| JavaScript logic & debugging      | 9 hours         |
+| Testing and fixing issues         | 2 hours         |
+| Writing README and documentation  | 2 hours         |
+| Creating and uploading video demo | 3 hours         |
+
+
 
 ---
 
