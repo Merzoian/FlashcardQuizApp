@@ -13,7 +13,7 @@ This project was created as part of a learning sprint to practice JavaScript, DO
 ## 🎥 Demo Video
 
 Watch a walkthrough of the app features and code explanation here:  
-👉 [YouTube Video Link](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK)
+👉 [YouTube Video Link](https://youtu.be/WvjSJZVmM-Q)
 
 ---
 
