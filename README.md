@@ -109,4 +109,5 @@ This project is provided for educational use only.
 **Valentina**  
 Project for personal learning and coursework  
 Brigham Young University–Idaho  
-Module 2 Project
+
+👉 [Module 2 Project](https://github.com/Merzoian/FlashcardQuizApp.git)
